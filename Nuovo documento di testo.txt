@@ -1,0 +1,29 @@
+Estrai tutti i clienti con nome Mario
+
+SELECT * FROM clienti WHERE nome like 'Mario'
+
+
+Estrarre il nome e il cognome dei clienti nati nel 1982
+
+SELECT nome,cognome FROM clienti WHERE annonascita = 1982;
+
+
+Estrarre il numero delle fatture con iva al 20%
+
+
+
+
+
+
+
+
+
+
+
+
+
+Considerando soltanto le fatture con iva al 20 per cento, estrarre il numero di fatture per ogni anno (Per estrarre l’anno da una data si può usare EXTRACT(YEAR FROM data)
+SELECT datafattura, COUNT(*)
+FROM fatture
+WHERE iva = 20
+GROUP BY datafattura;
